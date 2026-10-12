@@ -1,0 +1,3 @@
+metodo,Kp,Ti,Td,estavel_linear,tempo_subida_s,tempo_acomodacao_s,overshoot_pct,erro_final_bar,pressao_minima_bar,pressao_inicial_bar
+CHR 20%,32.532568,74.280056,6.591046,True,20.622,94.4,20.491,0.00184,0.4559,1.1143
+Cohen-Coon,47.839138,31.070298,4.842957,True,17.452,163.2,78.236,0.0003,0.2751,1.1143

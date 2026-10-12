@@ -1,0 +1,75 @@
+{
+  "dataset": "Pneumatico_G8.mat",
+  "identificacao": {
+    "Smith": {
+      "k": 0.11471083028359733,
+      "tau": 54.73843478286595,
+      "theta": 13.93455829903715,
+      "rmse": 0.21830712463573954
+    },
+    "Sundaresan": {
+      "k": 0.11471083028359733,
+      "tau": 55.69696774331545,
+      "theta": 14.693722492333144,
+      "rmse": 0.22565321937008498
+    }
+  },
+  "melhor_identificacao": "Smith",
+  "modelo_escolhido": "Smith",
+  "variaveis_ensaio": {
+    "t0": 20.0,
+    "u0": 0.0,
+    "du": 60.0,
+    "y0": 1.1142583965746409,
+    "yf": 7.996908213590481,
+    "uf": 60.0
+  },
+  "pade_ordem": 5,
+  "setpoint_bar": 8.0,
+  "malha_aberta_equivalente": {
+    "tempo_subida_s": 120.273,
+    "tempo_acomodacao_s": 228.2,
+    "overshoot_pct": 0.0,
+    "erro_final_bar": 0.00596,
+    "pressao_minima_bar": 1.1143,
+    "pressao_inicial_bar": 1.1143
+  },
+  "controladores": {
+    "CHR 20%": {
+      "parametros": {
+        "Kp": 32.532568,
+        "Ti": 74.280056,
+        "Td": 6.591046
+      },
+      "estavel_linear": true,
+      "polo_real_max": -0.01406608,
+      "metricas": {
+        "tempo_subida_s": 20.622,
+        "tempo_acomodacao_s": 94.4,
+        "overshoot_pct": 20.491,
+        "erro_final_bar": 0.00184,
+        "pressao_minima_bar": 0.4559,
+        "pressao_inicial_bar": 1.1143
+      }
+    },
+    "Cohen-Coon": {
+      "parametros": {
+        "Kp": 47.839138,
+        "Ti": 31.070298,
+        "Td": 4.842957
+      },
+      "estavel_linear": true,
+      "polo_real_max": -0.02549952,
+      "metricas": {
+        "tempo_subida_s": 17.452,
+        "tempo_acomodacao_s": 163.2,
+        "overshoot_pct": 78.236,
+        "erro_final_bar": 0.0003,
+        "pressao_minima_bar": 0.2751,
+        "pressao_inicial_bar": 1.1143
+      }
+    }
+  },
+  "modelo": "Planta FOPDT. Malha aberta com atraso puro analítico; malha fechada linear com atraso por Padé e PID com filtro derivativo N=10.",
+  "observacao": "A aproximação Padé e o PID linear não impõem limites físicos de pressão ou atuador. Respostas inversas iniciais são artefatos possíveis do modelo racional."
+}
